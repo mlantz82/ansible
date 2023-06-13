@@ -1,4 +1,4 @@
-- host: "{{ hosts }}"
+- host: all
 
   tasks:
 
