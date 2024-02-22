@@ -1,0 +1,12 @@
+---
+- name: install core packages for virtual machines
+  hosts: "{{ hosts }}"
+  become: yes
+  tasks:
+  - name: install packages
+    apt:
+      name:
+        - wget
+        - curl
+        - vim
+      update_cache: yes
